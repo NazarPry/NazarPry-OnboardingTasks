@@ -1,9 +1,12 @@
-# Packer-Ansible-AMI
+# Terraform-EKS
 
-Встановив на віртуальну машину Ansible, Packer, AWS Cli для авторизації і роль os_hardening із колекції dev-sec. Написав packer file та playbook. Packer build створив інстанс, налаштував за роллю і створив AMI. Також все працювало без явного вказування ssh ключа, але захотів попробувати вказати певний ключ для підлючення і також працює.
+Створив за допомогою Terraform одразу свою vpc на якій розмістив кластер, одразу надав кластеру доступ до ECR та доступ до кластеру юзеру AdminRole. Все у private subnets із private access endpoint, але з доступом до кластера через машини у тій ж vpc. Також додав CloudWatch addons для моніторингу.
 
 # Результат на віртуалці
 ![Virtual machine](images/1.png)
 
-# Результат у AWS консолі
-![AWS](images/2.png)
+# Результат на AWS - Cluster
+![Cluster](images/2.png)
+
+# Результат на AWS - Cluster Node
+![Virtual machine](images/3.png)
