@@ -1,0 +1,6 @@
+- hosts: all
+  become: yes
+  collections:
+    - devsec.hardening
+  roles:
+    - os_hardening
