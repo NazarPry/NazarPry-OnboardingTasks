@@ -1,12 +1,12 @@
-# Terraform-EKS
+# HelmChart-Nginx
 
-Створив за допомогою Terraform одразу свою vpc на якій розмістив кластер, одразу надав кластеру доступ до ECR та доступ до кластеру юзеру AdminRole. Все у private subnets із private access endpoint, але з доступом до кластера через машини у тій ж vpc. Також додав CloudWatch addons для моніторингу.
+Створив кластер minikube (до останього завдання потрібно), написав helm chart для nginx/hello і задеплоїв у кластер.
 
-# Результат на віртуалці
-![Virtual machine](images/1.png)
+# Результат у браузері
+![Nginx hello](images/1.png)
 
-# Результат на AWS - Cluster
-![Cluster](images/2.png)
+# Результат деплою
+![Helm install](images/2.png)
 
-# Результат на AWS - Cluster Node
-![Virtual machine](images/3.png)
+# Результат у кластері
+![Cluster](images/3.png)

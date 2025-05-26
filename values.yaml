@@ -1,0 +1,11 @@
+name: nginx
+label: nginx
+replicas: 1
+image: nginxdemos/hello:latest
+port: 80
+
+servicename: nginx-service
+type: ClusterIP
+protocol: TCP
+serviceport: 80
+
