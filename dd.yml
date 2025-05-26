@@ -1,0 +1,21 @@
+datadog:
+  apiKey: "accd8f1004b86d60bcde3f9d5e454c09"
+  appKey: "e4b6e226bb6bdeb1e7ef306cc30477e004236a3d"
+  site: "us5.datadoghq.com"
+  logs:
+    enabled: true
+    containerCollectAll: true
+  apm:
+    enabled: true
+  processAgent:
+    enabled: true
+    processCollection: true
+  kubeStateMetricsEnabled: true
+  kubeStateMetricsCore:
+    enabled: true
+  collectEvents: true
+  kubelet:
+    tlsVerify: false
+  orchestratorExplorer:
+    enabled: true
+  clusterName: "minikube"
